@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
-  <title>AsyncUtil (fantomas)</title>
+  <title>AsSelfIdentifierNode (fantomas)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
@@ -192,23 +192,31 @@
       <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
         <div>
   <h2>
-    AsyncUtil Module
+    AsSelfIdentifierNode Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library.html">
-        Internal.Utilities.Library
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core.html">
+        Fantomas.Core
       </a>
     </dt>
     <dt>
-      Assembly: Fantomas.FCS.dll
+      Assembly: Fantomas.Core.dll
     </dt>
     <dt>
       Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library-extras.html">
-        Extras
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak.html">
+        SyntaxOak
       </a>
+    </dt>
+    <dt>
+      Base Type: 
+      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-nodebase.html">NodeBase</a></code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-node.html">Node</a></code>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -218,39 +226,90 @@
       </p>
     </div>
   </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
   <div>
     <h3>
-      Types
+      Constructors
     </h3>
-    <table class="table outer-list fsdocs-entity-list">
+    <table class="table outer-list fsdocs-member-list">
       <thead>
         <tr>
-          <td>
-            Type
+          <td class="fsdocs-member-list-header">
+            Constructor
           </td>
-          <td>
+          <td class="fsdocs-member-list-header">
             Description
           </td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="fsdocs-entity-name">
-            <p>
-              <a name="AsyncResult<'T>">
-                <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library-extras-asyncutil-asyncresult-1.html">
-                  AsyncResult<'T>
-                </a>
-              </a>
-            </p>
-          </td>
-          <td class="fsdocs-entity-xmldoc">
+          <td class="fsdocs-member-usage">
             <div>
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.AsyncUtil.AsyncResult`1``')">
+              <code onmouseout="hideTip(event, '6393', 6393)" onmouseover="showTip(event, '6393', 6393)">
+                <p>
+                  <a id="``.ctor``">
+                    <a href="#``.ctor``">
+                      <code><span>AsSelfIdentifierNode<span><span>(<span>asNode,&#32;self,&#32;range</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="6393">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AsSelfIdentifierNode<span><span>(<span>asNode,&#32;self,&#32;range</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        asNode
+                      </b>
+                      :
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        self
+                      </b>
+                      :
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        range
+                      </b>
+                      :
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-range-0.html">range</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-asselfidentifiernode.html">AsSelfIdentifierNode</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:M:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.#ctor`')">
                 <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
                 <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
               </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.AsyncUtil.AsyncResult`1\'/>')">
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.#ctor\'/>')">
                 <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
                 <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
               </div>
@@ -260,47 +319,180 @@
               </a>
               <p class="fsdocs-summary">
                 
- Represents the reified result of an asynchronous computation.
-
               </p>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-entity-name">
-            <p>
-              <a name="AsyncResultCell<'T>">
-                <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library-extras-asyncutil-asyncresultcell-1.html">
-                  AsyncResultCell<'T>
-                </a>
-              </a>
-            </p>
-          </td>
-          <td class="fsdocs-entity-xmldoc">
-            <div>
-              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:T:Internal.Utilities.Library.Extras.AsyncUtil.AsyncResultCell`1``')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
-              </div>
-              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'T:Internal.Utilities.Library.Extras.AsyncUtil.AsyncResultCell`1\'/>')">
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
-              </div>
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
-                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
- When using .NET 4.0 you can replace this type by <see cref="Task{T}"/>
-
-              </p>
-            </div>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  asNode
+                </span>
+                :
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  self
+                </span>
+                :
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  range
+                </span>
+                :
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fsharp-compiler-text-range-0.html">range</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-asselfidentifiernode.html">AsSelfIdentifierNode</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '6394', 6394)" onmouseover="showTip(event, '6394', 6394)">
+                <p>
+                  <a id="As">
+                    <a href="#As">
+                      <code><span>this.As</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="6394">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.As</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.As`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.As\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '6395', 6395)" onmouseover="showTip(event, '6395', 6395)">
+                <p>
+                  <a id="Self">
+                    <a href="#Self">
+                      <code><span>this.Self</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="6395">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Self</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.Self`')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
+              </div>
+              <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.Core.SyntaxOak.AsSelfIdentifierNode.Self\'/>')">
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+              </div>
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
 </div>
         
       </div>
