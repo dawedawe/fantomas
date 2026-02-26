@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="LexbufCommentStore (fantomas)" />
+    <meta property="og:title" content="ObsoleteDiagnostic (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="LexbufCommentStore (fantomas)">
+    <meta name="twitter:title" content="ObsoleteDiagnostic (fantomas)">
     
-    <title>LexbufCommentStore (fantomas) | fantomas</title>
+    <title>ObsoleteDiagnostic (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,7 +284,7 @@
     <div id="content">
         <div>
   <h2>
-    LexbufCommentStore Module
+    ObsoleteDiagnostic Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
@@ -298,9 +298,19 @@
     </dt>
     <dt>
       Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-parsehelpers.html">
-        ParseHelpers
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-diagnosticslogger.html">
+        DiagnosticsLogger
       </a>
+    </dt>
+    <dt>
+      Base Type: 
+      <code>exn</code>
+    </dt>
+    <dt>
+      All Interfaces: 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable">ISerializable</a></code>
+      , 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -312,15 +322,19 @@
       </div>
     </div>
   </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
   <div>
     <h3>
-      Functions and values
+      Record fields
     </h3>
     <table class="table outer-list fsdocs-member-list">
       <thead>
         <tr>
           <td class="fsdocs-member-list-header">
-            Function or value
+            Record Field
           </td>
           <td class="fsdocs-member-list-header">
             Description
@@ -332,90 +346,24 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '359', 359)" onmouseover="showTip(event, '359', 359)">
+              <code onmouseout="hideTip(event, '4744', 4744)" onmouseover="showTip(event, '4744', 4744)">
                 <p>
-                  <a id="ClearComments">
-                    <a href="#ClearComments">
-                      <code><span>ClearComments&#32;<span>lexbuf</span></span></code>
+                  <a id="diagnosticId">
+                    <a href="#diagnosticId">
+                      <code>diagnosticId</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="359">
+              <div class="fsdocs-tip" id="4744">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>ClearComments&#32;<span>lexbuf</span></span></code>
+                  <code>diagnosticId</code>
                   <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '360', 360)" onmouseover="showTip(event, '360', 360)">
-                <p>
-                  <a id="GetComments">
-                    <a href="#GetComments">
-                      <code><span>GetComments&#32;<span>lexbuf</span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="360">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>GetComments&#32;<span>lexbuf</span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
                   <br/>
                   <span>
-                    Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-commenttrivia.html">CommentTrivia</a>&#32;list</span></code>
+                    Field type: 
+                    <code><span>string&#32;option</span></code>
                   </span>
                   <br/>
                 </div>
@@ -429,22 +377,12 @@
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
               <dl class="fsdocs-returns">
                 <dt>
                   <span class="fsdocs-return-name">
-                    Returns: 
+                    Field type: 
                   </span>
-                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-commenttrivia.html">CommentTrivia</a>&#32;list</span></code>
+                  <code><span>string&#32;option</span></code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -454,48 +392,25 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '361', 361)" onmouseover="showTip(event, '361', 361)">
+              <code onmouseout="hideTip(event, '4745', 4745)" onmouseover="showTip(event, '4745', 4745)">
                 <p>
-                  <a id="SaveBlockComment">
-                    <a href="#SaveBlockComment">
-                      <code><span>SaveBlockComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
+                  <a id="isError">
+                    <a href="#isError">
+                      <code>isError</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="361">
+              <div class="fsdocs-tip" id="4745">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>SaveBlockComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
+                  <code>isError</code>
                   <br/>
                   <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        startRange
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        endRange
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
                   <br/>
                 </div>
               </div>
@@ -508,31 +423,14 @@
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code>bool</code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    startRange
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    endRange
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
             </div>
           </td>
@@ -540,48 +438,25 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '362', 362)" onmouseover="showTip(event, '362', 362)">
+              <code onmouseout="hideTip(event, '4746', 4746)" onmouseover="showTip(event, '4746', 4746)">
                 <p>
-                  <a id="SaveSingleLineComment">
-                    <a href="#SaveSingleLineComment">
-                      <code><span>SaveSingleLineComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
+                  <a id="message">
+                    <a href="#message">
+                      <code>message</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="362">
+              <div class="fsdocs-tip" id="4746">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>SaveSingleLineComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
+                  <code>message</code>
                   <br/>
                   <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        startRange
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        endRange
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
+                  <span>
+                    Field type: 
+                    <code><span>string&#32;option</span></code>
+                  </span>
                   <br/>
                 </div>
               </div>
@@ -594,31 +469,106 @@
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code><span>string&#32;option</span></code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    startRange
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4747', 4747)" onmouseover="showTip(event, '4747', 4747)">
+                <p>
+                  <a id="range">
+                    <a href="#range">
+                      <code>range</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4747">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>range</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
                   </span>
-                  :
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
                   <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    endRange
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '4748', 4748)" onmouseover="showTip(event, '4748', 4748)">
+                <p>
+                  <a id="urlFormat">
+                    <a href="#urlFormat">
+                      <code>urlFormat</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="4748">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>urlFormat</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><span>string&#32;option</span></code>
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
+                  </span>
+                  <code><span>string&#32;option</span></code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
             </div>
           </td>
@@ -626,10 +576,6 @@
       </tbody>
     </table>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
   <div></div>
   <div></div>
   <div></div>

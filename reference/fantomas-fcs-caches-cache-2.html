@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="ExprLetOrUseNode (fantomas)" />
+    <meta property="og:title" content="Cache<'Key, 'Value> (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="ExprLetOrUseNode (fantomas)">
+    <meta name="twitter:title" content="Cache<'Key, 'Value> (fantomas)">
     
-    <title>ExprLetOrUseNode (fantomas) | fantomas</title>
+    <title>Cache<'Key, 'Value> (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,31 +284,25 @@
     <div id="content">
         <div>
   <h2>
-    ExprLetOrUseNode Type
+    Cache<'Key, 'Value> Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core.html">
-        Fantomas.Core
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches.html">
+        Fantomas.FCS.Caches
       </a>
     </dt>
     <dt>
-      Assembly: Fantomas.Core.dll
-    </dt>
-    <dt>
-      Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak.html">
-        SyntaxOak
-      </a>
+      Assembly: Fantomas.FCS.dll
     </dt>
     <dt>
       Base Type: 
-      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-nodebase.html">NodeBase</a></code>
+      <code>obj</code>
     </dt>
     <dt>
       All Interfaces: 
-      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-node.html">Node</a></code>
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -346,52 +340,44 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3584', 3584)" onmouseover="showTip(event, '3584', 3584)">
+              <code onmouseout="hideTip(event, '8275', 8275)" onmouseover="showTip(event, '8275', 8275)">
                 <p>
                   <a id="``.ctor``">
                     <a href="#``.ctor``">
-                      <code><span>ExprLetOrUseNode<span><span>(<span>binding,&#32;inKeyword,&#32;range</span>)</span></span></span></code>
+                      <code><span>Cache<span><span>(<span>options,&#32;?name</span>)</span></span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3584">
+              <div class="fsdocs-tip" id="8275">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>ExprLetOrUseNode<span><span>(<span>binding,&#32;inKeyword,&#32;range</span>)</span></span></span></code>
+                  <code><span>Cache<span><span>(<span>options,&#32;?name</span>)</span></span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
                   <ul>
                     <span>
                       <b>
-                        binding
+                        options
                       </b>
                       :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-bindingnode.html">BindingNode</a></code>
+                      <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cacheoptions-1.html">CacheOptions</a>&lt;'Key&gt;</span></code>
                     </span>
                     <br/>
                     <span>
                       <b>
-                        inKeyword
+                        ?name
                       </b>
                       :
-                      <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a>&#32;option</span></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        range
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
+                      <code>string</code>
                     </span>
                     <br/>
                   </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-exprletorusenode.html">ExprLetOrUseNode</a></code>
+                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cache-2.html">Cache</a>&lt;<span>'Key,&#32;'Value</span>&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -408,26 +394,18 @@
               <dl class="fsdocs-params">
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    binding
+                    options
                   </span>
                   :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-bindingnode.html">BindingNode</a></code>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cacheoptions-1.html">CacheOptions</a>&lt;'Key&gt;</span></code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    inKeyword
+                    ?name
                   </span>
                   :
-                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a>&#32;option</span></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    range
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
+                  <code>string</code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
               </dl>
@@ -436,7 +414,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-exprletorusenode.html">ExprLetOrUseNode</a></code>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cache-2.html">Cache</a>&lt;<span>'Key,&#32;'Value</span>&gt;</span></code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -466,24 +444,297 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3585', 3585)" onmouseover="showTip(event, '3585', 3585)">
+              <code onmouseout="hideTip(event, '8276', 8276)" onmouseover="showTip(event, '8276', 8276)">
                 <p>
-                  <a id="Binding">
-                    <a href="#Binding">
-                      <code><span>this.Binding</span></code>
+                  <a id="AddOrUpdate">
+                    <a href="#AddOrUpdate">
+                      <code><span>this.AddOrUpdate</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3585">
+              <div class="fsdocs-tip" id="8276">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.Binding</span></code>
+                  <code><span>this.AddOrUpdate</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        key
+                      </b>
+                      :
+                      <code>'Key</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>'Value</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    key
+                  </span>
+                  :
+                  <code>'Key</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    value
+                  </span>
+                  :
+                  <code>'Value</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8277', 8277)" onmouseover="showTip(event, '8277', 8277)">
+                <p>
+                  <a id="CreateMetricsListener">
+                    <a href="#CreateMetricsListener">
+                      <code><span>this.CreateMetricsListener</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8277">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.CreateMetricsListener</span></code>
                   <br/>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-bindingnode.html">BindingNode</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cachemetrics-cachemetricslistener.html">CacheMetricsListener</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       For testing only. Creates a local telemetry listener for this cache instance.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'M:Fantomas.FCS.Caches.Cache`2.CreateMetricsListener\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:M:Fantomas.FCS.Caches.Cache`2.CreateMetricsListener``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-cachemetrics-cachemetricslistener.html">CacheMetricsListener</a></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8278', 8278)" onmouseover="showTip(event, '8278', 8278)">
+                <p>
+                  <a id="Evicted">
+                    <a href="#Evicted">
+                      <code><span>this.Evicted</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8278">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Evicted</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>IEvent&lt;unit&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       For testing only.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.FCS.Caches.Cache`2.Evicted\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Fantomas.FCS.Caches.Cache`2.Evicted``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>IEvent&lt;unit&gt;</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8279', 8279)" onmouseover="showTip(event, '8279', 8279)">
+                <p>
+                  <a id="EvictionFailed">
+                    <a href="#EvictionFailed">
+                      <code><span>this.EvictionFailed</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8279">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.EvictionFailed</span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>IEvent&lt;unit&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       For testing only.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                    <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.FCS.Caches.Cache`2.EvictionFailed\'/>')">
+                      <iconify-icon icon="bi:filetype-xml" height="24" width="24"></iconify-icon>
+                    </div>
+                    <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('``cref:P:Fantomas.FCS.Caches.Cache`2.EvictionFailed``')">
+                      <iconify-icon icon="bi:filetype-md" height="24" width="24"></iconify-icon>
+                    </div>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code><span>IEvent&lt;unit&gt;</span></code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8280', 8280)" onmouseover="showTip(event, '8280', 8280)">
+                <p>
+                  <a id="GetOrAdd">
+                    <a href="#GetOrAdd">
+                      <code><span>this.GetOrAdd</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8280">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetOrAdd</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        key
+                      </b>
+                      :
+                      <code>'Key</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        valueFactory
+                      </b>
+                      :
+                      <code><span>'Key&#32;->&#32;'Value</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Value</code>
                   </span>
                   <br/>
                 </div>
@@ -497,12 +748,30 @@
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    key
+                  </span>
+                  :
+                  <code>'Key</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    valueFactory
+                  </span>
+                  :
+                  <code><span>'Key&#32;->&#32;'Value</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
               <dl class="fsdocs-returns">
                 <dt>
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-bindingnode.html">BindingNode</a></code>
+                  <code>'Value</code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -512,24 +781,44 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3586', 3586)" onmouseover="showTip(event, '3586', 3586)">
+              <code onmouseout="hideTip(event, '8281', 8281)" onmouseover="showTip(event, '8281', 8281)">
                 <p>
-                  <a id="In">
-                    <a href="#In">
-                      <code><span>this.In</span></code>
+                  <a id="TryAdd">
+                    <a href="#TryAdd">
+                      <code><span>this.TryAdd</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3586">
+              <div class="fsdocs-tip" id="8281">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.In</span></code>
+                  <code><span>this.TryAdd</span></code>
                   <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        key
+                      </b>
+                      :
+                      <code>'Key</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>'Value</code>
+                    </span>
+                    <br/>
+                  </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a>&#32;option</span></code>
+                    <code>bool</code>
                   </span>
                   <br/>
                 </div>
@@ -543,12 +832,114 @@
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    key
+                  </span>
+                  :
+                  <code>'Key</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    value
+                  </span>
+                  :
+                  <code>'Value</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
               <dl class="fsdocs-returns">
                 <dt>
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a>&#32;option</span></code>
+                  <code>bool</code>
+                </dt>
+                <dd class="fsdocs-return-docs"></dd>
+              </dl>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8282', 8282)" onmouseover="showTip(event, '8282', 8282)">
+                <p>
+                  <a id="TryGetValue">
+                    <a href="#TryGetValue">
+                      <code><span>this.TryGetValue</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8282">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.TryGetValue</span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        key
+                      </b>
+                      :
+                      <code>'Key</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code><span>outref&lt;'Value&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-member-xmldoc-column">
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+              <dl class="fsdocs-params">
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    key
+                  </span>
+                  :
+                  <code>'Key</code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    value
+                  </span>
+                  :
+                  <code><span>outref&lt;'Value&gt;</span></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+              </dl>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
+                  </span>
+                  <code>bool</code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>

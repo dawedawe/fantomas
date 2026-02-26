@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="LexbufIfdefStore (fantomas)" />
+    <meta property="og:title" content="CacheOptions<'Key> (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="LexbufIfdefStore (fantomas)">
+    <meta name="twitter:title" content="CacheOptions<'Key> (fantomas)">
     
-    <title>LexbufIfdefStore (fantomas) | fantomas</title>
+    <title>CacheOptions<'Key> (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,23 +284,24 @@
     <div id="content">
         <div>
   <h2>
-    LexbufIfdefStore Module
+    CacheOptions<'Key> Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs.html">
-        Fantomas.FCS
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches.html">
+        Fantomas.FCS.Caches
       </a>
     </dt>
     <dt>
       Assembly: Fantomas.FCS.dll
     </dt>
     <dt>
-      Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-parsehelpers.html">
-        ParseHelpers
-      </a>
+      Base Type: 
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.valuetype">ValueType</a></code>
+    </dt>
+    <dt>
+      Kind: Struct
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -312,15 +313,19 @@
       </div>
     </div>
   </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
   <div>
     <h3>
-      Functions and values
+      Record fields
     </h3>
     <table class="table outer-list fsdocs-member-list">
       <thead>
         <tr>
           <td class="fsdocs-member-list-header">
-            Function or value
+            Record Field
           </td>
           <td class="fsdocs-member-list-header">
             Description
@@ -332,36 +337,24 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '363', 363)" onmouseover="showTip(event, '363', 363)">
+              <code onmouseout="hideTip(event, '8283', 8283)" onmouseover="showTip(event, '8283', 8283)">
                 <p>
-                  <a id="GetTrivia">
-                    <a href="#GetTrivia">
-                      <code><span>GetTrivia&#32;<span>lexbuf</span></span></code>
+                  <a id="Comparer">
+                    <a href="#Comparer">
+                      <code>Comparer</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="363">
+              <div class="fsdocs-tip" id="8283">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>GetTrivia&#32;<span>lexbuf</span></span></code>
+                  <code>Comparer</code>
                   <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
                   <br/>
                   <span>
-                    Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-conditionaldirectivetrivia.html">ConditionalDirectiveTrivia</a>&#32;list</span></code>
+                    Field type: 
+                    <code><span><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;'Key&gt;</span></code>
                   </span>
                   <br/>
                 </div>
@@ -369,315 +362,201 @@
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Comparer to use for keys.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </summary>
               <dl class="fsdocs-returns">
                 <dt>
                   <span class="fsdocs-return-name">
-                    Returns: 
+                    Field type: 
                   </span>
-                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-conditionaldirectivetrivia.html">ConditionalDirectiveTrivia</a>&#32;list</span></code>
+                  <code><span><a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1">IEqualityComparer</a>&lt;'Key&gt;</span></code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
-            </div>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '364', 364)" onmouseover="showTip(event, '364', 364)">
+              <code onmouseout="hideTip(event, '8284', 8284)" onmouseover="showTip(event, '8284', 8284)">
                 <p>
-                  <a id="SaveElseHash">
-                    <a href="#SaveElseHash">
-                      <code><span>SaveElseHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;range</span>)</span></span></span></code>
+                  <a id="EvictionMode">
+                    <a href="#EvictionMode">
+                      <code>EvictionMode</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="364">
+              <div class="fsdocs-tip" id="8284">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>SaveElseHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;range</span>)</span></span></span></code>
+                  <code>EvictionMode</code>
                   <br/>
                   <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        lexed
-                      </b>
-                      :
-                      <code>string</code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        range
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-evictionmode.html">EvictionMode</a></code>
+                  </span>
                   <br/>
                 </div>
               </div>
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Mechanism to use for evicting items from the cache.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches-evictionmode.html">EvictionMode</a></code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexed
-                  </span>
-                  :
-                  <code>string</code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    range
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
-            </div>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '365', 365)" onmouseover="showTip(event, '365', 365)">
+              <code onmouseout="hideTip(event, '8285', 8285)" onmouseover="showTip(event, '8285', 8285)">
                 <p>
-                  <a id="SaveEndIfHash">
-                    <a href="#SaveEndIfHash">
-                      <code><span>SaveEndIfHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;range</span>)</span></span></span></code>
+                  <a id="HeadroomPercentage">
+                    <a href="#HeadroomPercentage">
+                      <code>HeadroomPercentage</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="365">
+              <div class="fsdocs-tip" id="8285">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>SaveEndIfHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;range</span>)</span></span></span></code>
+                  <code>HeadroomPercentage</code>
                   <br/>
                   <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        lexed
-                      </b>
-                      :
-                      <code>string</code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        range
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
+                  <span>
+                    Field type: 
+                    <code>int</code>
+                  </span>
                   <br/>
                 </div>
               </div>
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Safety margin size as a percentage of TotalCapacity.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code>int</code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexed
-                  </span>
-                  :
-                  <code>string</code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    range
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
-            </div>
+            </details>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '366', 366)" onmouseover="showTip(event, '366', 366)">
+              <code onmouseout="hideTip(event, '8286', 8286)" onmouseover="showTip(event, '8286', 8286)">
                 <p>
-                  <a id="SaveIfHash">
-                    <a href="#SaveIfHash">
-                      <code><span>SaveIfHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;expr,&#32;range</span>)</span></span></span></code>
+                  <a id="TotalCapacity">
+                    <a href="#TotalCapacity">
+                      <code>TotalCapacity</code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="366">
+              <div class="fsdocs-tip" id="8286">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>SaveIfHash&#32;<span><span>(<span>lexbuf,&#32;lexed,&#32;expr,&#32;range</span>)</span></span></span></code>
+                  <code>TotalCapacity</code>
                   <br/>
                   <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        lexed
-                      </b>
-                      :
-                      <code>string</code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        expr
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-parsehelpers-lexerifdefexpression.html">LexerIfdefExpression</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        range
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
+                  <span>
+                    Field type: 
+                    <code>int</code>
+                  </span>
                   <br/>
                 </div>
               </div>
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+            <details>
+              <summary>
+                <div class="fsdocs-summary">
+                  <div class="fsdocs-summary-contents">
+                    <p class="fsdocs-summary">
+                       Total capacity, determines the size of the underlying store.
+                    </p>
+                  </div>
+                  <div class="icon-button-row">
+                    <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                      <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                    </a>
+                  </div>
+                </div>
+              </summary>
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Field type: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code>int</code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexed
-                  </span>
-                  :
-                  <code>string</code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    expr
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-parsehelpers-lexerifdefexpression.html">LexerIfdefExpression</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    range
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
-            </div>
+            </details>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
   <div></div>
   <div></div>
   <div></div>

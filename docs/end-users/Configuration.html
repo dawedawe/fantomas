@@ -293,7 +293,7 @@ These can be stored in an <a href="https://editorconfig.org/">.editorconfig</a> 
 commandline.<br />
 Your IDE should respect your settings, however the implementation of that is editor specific. Setting the configuration via
 UI might be available depending on the IDE.</p>
-<table class="pre"><tr><td><pre><code>version: 7.0.5+57a1ad7e7c63eff56600f5c4a4474bd35e5f8174</code></pre></td></tr></table>
+<table class="pre"><tr><td><pre><code>version: 8.0.0-alpha-002+8e32f2b832482803e4d088d89a1f0bc67002ced8</code></pre></td></tr></table>
 <h2><a name="Usage" class="anchor" href="#Usage">Usage</a></h2>
 <p>Inside .editorconfig you can specify the file extension and code location to be use per config:</p>
 <pre class="fssnip highlighted"><code lang="fsharp"><span class="pn">[</span><span class="pn">*.</span><span class="id">fs</span><span class="pn">]</span>
@@ -672,14 +672,18 @@ fsharp_max_record_width = 40</code></pre></td></tr></table>
 <span class="s">    &quot;&quot;&quot;</span>
 </code></pre>
 <table class="pre"><tr><td><pre><code>type MyRecord =
-    { X: int
-      Y: int
-      Length: int }
+    {
+        X: int
+        Y: int
+        Length: int
+    }
 
 let myInstance =
-    { X = 10
-      Y = 20
-      Length = 90 }</code></pre></td></tr></table>
+    {
+        X = 10
+        Y = 20
+        Length = 90
+    }</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_max_record_number_of_items" class="anchor" href="#fsharp_max_record_number_of_items">fsharp_max_record_number_of_items</a></h3>
 <copy-to-clipboard text="fsharp_max_record_number_of_items = 2"></copy-to-clipboard>
@@ -714,9 +718,11 @@ fsharp_max_record_number_of_items = 1</code></pre></td></tr></table>
 type S = { x: int; y: string }
 
 type T =
-    { x: int
-      y: string
-      z: float }
+    {
+        x: int
+        y: string
+        z: float
+    }
 
 let myRecord = { r = 3 }
 
@@ -728,7 +734,8 @@ let myRecord''' =
     { r with
         x = 3
         y = "hello"
-        z = 0.0 }</code></pre></td></tr></table>
+        z = 0.0
+    }</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_record_multiline_formatter" class="anchor" href="#fsharp_record_multiline_formatter">fsharp_record_multiline_formatter</a></h3>
 <copy-to-clipboard text="fsharp_record_multiline_formatter = number_of_items"></copy-to-clipboard>
@@ -757,8 +764,10 @@ fsharp_record_multiline_formatter = character_width</code></pre></td></tr></tabl
 <table class="pre"><tr><td><pre><code>type R = { x: int }
 
 type S =
-    { x: int
-      y: string }
+    {
+        x: int
+        y: string
+    }
 
 let myRecord = { r = 3 }
 
@@ -767,7 +776,8 @@ let myRecord' = { r with x = 3 }
 let myRecord'' =
     { r with
         x = 3
-        y = "hello" }</code></pre></td></tr></table>
+        y = "hello"
+    }</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_max_array_or_list_width" class="anchor" href="#fsharp_max_array_or_list_width">fsharp_max_array_or_list_width</a></h3>
 <copy-to-clipboard text="fsharp_max_array_or_list_width = 100"></copy-to-clipboard>
@@ -784,9 +794,11 @@ fsharp_max_array_or_list_width = 80</code></pre></td></tr></table>
 <span class="s">    &quot;&quot;&quot;</span>
 </code></pre>
 <table class="pre"><tr><td><pre><code>let myArray =
-    [| one
-       two
-       three |]</code></pre></td></tr></table>
+    [|
+        one
+        two
+        three
+    |]</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_max_array_or_list_number_of_items" class="anchor" href="#fsharp_max_array_or_list_number_of_items">fsharp_max_array_or_list_number_of_items</a></h3>
 <copy-to-clipboard text="fsharp_max_array_or_list_number_of_items = 2"></copy-to-clipboard>
@@ -807,9 +819,11 @@ fsharp_max_array_or_list_number_of_items = 1</code></pre></td></tr></table>
 <table class="pre"><tr><td><pre><code>let myList = [ one; two ]
 
 let myArray =
-    [| one
-       two
-       three |]</code></pre></td></tr></table>
+    [|
+        one
+        two
+        three
+    |]</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_array_or_list_multiline_formatter" class="anchor" href="#fsharp_array_or_list_multiline_formatter">fsharp_array_or_list_multiline_formatter</a></h3>
 <copy-to-clipboard text="fsharp_array_or_list_multiline_formatter = number_of_items"></copy-to-clipboard>
@@ -828,9 +842,11 @@ fsharp_array_or_list_multiline_formatter = character_width</code></pre></td></tr
 <span class="s">    &quot;&quot;&quot;</span>
 </code></pre>
 <table class="pre"><tr><td><pre><code>let myArray =
-    [| one
-       two
-       three |]</code></pre></td></tr></table>
+    [|
+        one
+        two
+        three
+    |]</code></pre></td></tr></table>
 <fantomas-setting green></fantomas-setting>
 <h3><a name="fsharp_max_value_binding_width" class="anchor" href="#fsharp_max_value_binding_width">fsharp_max_value_binding_width</a></h3>
 <copy-to-clipboard text="fsharp_max_value_binding_width = 100"></copy-to-clipboard>
@@ -863,26 +879,29 @@ In contrast to <code>fsharp_max_value_binding_width</code>, only the right-hand 
 fsharp_max_function_binding_width = 40</code></pre></td></tr></table>
 <pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs5', 300)" onmouseover="showTip(event, 'fs5', 300)" class="fn">formatCode</span>
     <span class="s">&quot;&quot;&quot; </span>
-<span class="s">    let title = &quot;Great title of project&quot;</span>
-<span class="s">    type MyType() =</span>
-<span class="s">        member this.HelpText = &quot;Some help text&quot;</span>
+<span class="s">    let printScore score total = printfn &quot;%i / %i&quot; score total</span>
+
+<span class="s">    type Triangle() =</span>
+<span class="s">        member this.CalculateSurface(width: int, height: int) = width * height / 2</span>
 <span class="s">    &quot;&quot;&quot;</span>
     <span class="s">&quot;&quot;&quot;</span>
 <span class="s">fsharp_max_function_binding_width = 10</span>
 <span class="s">    &quot;&quot;&quot;</span>
 </code></pre>
-<table class="pre"><tr><td><pre><code>let title = "Great title of project"
+<table class="pre"><tr><td><pre><code>let printScore score total =
+    printfn "%i / %i" score total
 
-type MyType() =
-    member this.HelpText = "Some help text"</code></pre></td></tr></table>
+type Triangle() =
+    member this.CalculateSurface(width: int, height: int) =
+        width * height / 2</code></pre></td></tr></table>
 <fantomas-setting green gr></fantomas-setting>
 <h3><a name="fsharp_multiline_bracket_style" class="anchor" href="#fsharp_multiline_bracket_style">fsharp_multiline_bracket_style</a></h3>
 <copy-to-clipboard text="fsharp_multiline_bracket_style = stroustrup"></copy-to-clipboard>
-<p><code>Cramped</code> The default way in F# to format brackets.<br />
-<code>Aligned</code> Alternative way of formatting records, arrays and lists. This will align the braces at the same column level.<br />
+<p><code>Cramped</code> Alternative way in F# to format brackets.<br />
+<code>Aligned</code> The default way of formatting records, arrays and lists. This will align the braces at the same column level.<br />
 <code>Stroustrup</code> Allow for easier reordering of members and keeping the code succinct.</p>
 <table class="pre"><tr><td><pre><code># Default
-fsharp_multiline_bracket_style = cramped</code></pre></td></tr></table>
+fsharp_multiline_bracket_style = aligned</code></pre></td></tr></table>
 <pre class="fssnip highlighted"><code lang="fsharp"><span onmouseout="hideTip(event, 'fs5', 312)" onmouseover="showTip(event, 'fs5', 312)" class="fn">formatCode</span>
     <span class="s">&quot;&quot;&quot; </span>
 <span class="s">    let myRecord =</span>
@@ -1030,8 +1049,10 @@ fsharp_newline_between_type_definition_and_members = true</code></pre></td></tr>
 <span class="s">    &quot;&quot;&quot;</span>
 </code></pre>
 <table class="pre"><tr><td><pre><code>type Range =
-    { From: float
-      To: float }
+    {
+        From: float
+        To: float
+    }
 
     member this.Length = this.To - this.From</code></pre></td></tr></table>
 <fantomas-setting green gr></fantomas-setting>
@@ -1359,7 +1380,7 @@ from Fantomas</div>
 <div class="fsdocs-tip" id="fs9">val async: AsyncBuilder</div>
 <div class="fsdocs-tip" id="fs10">val config: FormatConfig</div>
 <div class="fsdocs-tip" id="fs11">val editorConfigProperties: Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;</div>
-<div class="fsdocs-tip" id="fs12">String.Split([&lt;ParamArray&gt;] separator: char array) : string array<br />String.Split(separator: string array, options: StringSplitOptions) : string array<br />String.Split(separator: string, ?options: StringSplitOptions) : string array<br />String.Split(separator: char array, options: StringSplitOptions) : string array<br />String.Split(separator: char array, count: int) : string array<br />String.Split(separator: char, ?options: StringSplitOptions) : string array<br />String.Split(separator: string array, count: int, options: StringSplitOptions) : string array<br />String.Split(separator: string, count: int, ?options: StringSplitOptions) : string array<br />String.Split(separator: char array, count: int, options: StringSplitOptions) : string array<br />String.Split(separator: char, count: int, ?options: StringSplitOptions) : string array</div>
+<div class="fsdocs-tip" id="fs12">String.Split(separator: ReadOnlySpan&lt;char&gt;) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split([&lt;ParamArray&gt;] separator: char array) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string array, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, count: int) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string array, count: int, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string, count: int, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, count: int, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em></div>
 <div class="fsdocs-tip" id="fs13">[&lt;Struct&gt;]
 type StringSplitOptions =
   | None = 0
@@ -1407,16 +1428,16 @@ type StringSplitOptions =
 <div class="fsdocs-tip" id="fs26">property FormatConfig.Default: FormatConfig with get</div>
 <div class="fsdocs-tip" id="fs27">val result: FormatResult</div>
 <div class="fsdocs-tip" id="fs28">type CodeFormatter =
-  static member FormatASTAsync: ast: ParsedInput -&gt; Async&lt;string&gt; + 2 overloads
+  static member FormatASTAsync: ast: ParsedInput -&gt; Async&lt;string&gt; + 3 overloads
   static member FormatDocumentAsync: isSignature: bool * source: string -&gt; Async&lt;FormatResult&gt; + 2 overloads
   static member FormatOakAsync: oak: Oak -&gt; Async&lt;string&gt; + 1 overload
   static member FormatSelectionAsync: isSignature: bool * source: string * selection: range -&gt; Async&lt;string * range&gt; + 1 overload
   static member GetVersion: unit -&gt; string
+  static member GetWriterEventsAsync: isSignature: bool * source: string -&gt; Async&lt;WriterEvent array&gt; + 1 overload
   static member IsValidFSharpCodeAsync: isSignature: bool * source: string -&gt; Async&lt;bool&gt;
   static member MakePosition: line: int * column: int -&gt; pos
   static member MakeRange: fileName: string * startLine: int * startCol: int * endLine: int * endCol: int -&gt; range
   static member ParseAsync: isSignature: bool * source: string -&gt; Async&lt;(ParsedInput * string list) array&gt;
-  static member ParseOakAsync: isSignature: bool * source: string -&gt; Async&lt;(Oak * string list) array&gt;
   ...</div>
 <div class="fsdocs-tip" id="fs29">static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string -&gt; Async&lt;FormatResult&gt;<br />static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string * config: FormatConfig -&gt; Async&lt;FormatResult&gt;<br />static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string * config: FormatConfig * cursor: Fantomas.FCS.Text.pos -&gt; Async&lt;FormatResult&gt;</div>
 <div class="fsdocs-tip" id="fs30">val printf: format: Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T</div>
@@ -1467,7 +1488,9 @@ from Fantomas.Core<br /><br />--------------------<br />type Async =
   | NumberOfItems
   member Equals: MultilineFormatterType * IEqualityComparer -&gt; bool
   static member OfConfigString: cfgString: string -&gt; MultilineFormatterType option
-  static member ToConfigString: cfg: MultilineFormatterType -&gt; string</div>
+  static member ToConfigString: cfg: MultilineFormatterType -&gt; string
+  member IsCharacterWidth: bool
+  member IsNumberOfItems: bool</div>
 <div class="fsdocs-tip" id="fs59">static member MultilineFormatterType.ToConfigString: cfg: MultilineFormatterType -&gt; string</div>
 <div class="fsdocs-tip" id="fs60">FormatConfig.MaxArrayOrListWidth: Num</div>
 <div class="fsdocs-tip" id="fs61">FormatConfig.MaxArrayOrListNumberOfItems: Num</div>
@@ -1481,7 +1504,10 @@ from Fantomas.Core<br /><br />--------------------<br />type Async =
   | Stroustrup
   member Equals: MultilineBracketStyle * IEqualityComparer -&gt; bool
   static member OfConfigString: cfgString: string -&gt; MultilineBracketStyle option
-  static member ToConfigString: cfg: MultilineBracketStyle -&gt; string</div>
+  static member ToConfigString: cfg: MultilineBracketStyle -&gt; string
+  member IsAligned: bool
+  member IsCramped: bool
+  member IsStroustrup: bool</div>
 <div class="fsdocs-tip" id="fs67">static member MultilineBracketStyle.ToConfigString: cfg: MultilineBracketStyle -&gt; string</div>
 <div class="fsdocs-tip" id="fs68">FormatConfig.NewlineBeforeMultilineComputationExpression: bool</div>
 <div class="fsdocs-tip" id="fs69">FormatConfig.NewlineBetweenTypeDefinitionAndMembers: bool</div>

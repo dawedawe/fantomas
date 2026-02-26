@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="ValueOptionInternal (fantomas)" />
+    <meta property="og:title" content="Async (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="ValueOptionInternal (fantomas)">
+    <meta name="twitter:title" content="Async (fantomas)">
     
-    <title>ValueOptionInternal (fantomas) | fantomas</title>
+    <title>Async (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,7 +284,7 @@
     <div id="content">
         <div>
   <h2>
-    ValueOptionInternal Module
+    Async Module
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
@@ -295,6 +295,12 @@
     </dt>
     <dt>
       Assembly: Fantomas.FCS.dll
+    </dt>
+    <dt>
+      Parent Module: 
+      <a href="https://fsprojects.github.io/fantomas/reference/internal-utilities-library-extras.html">
+        Extras
+      </a>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -326,51 +332,46 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1455', 1455)" onmouseover="showTip(event, '1455', 1455)">
+              <code onmouseout="hideTip(event, '1282', 1282)" onmouseover="showTip(event, '1282', 1282)">
                 <p>
-                  <a id="bind">
-                    <a href="#bind">
-                      <code><span>bind&#32;<span>f&#32;x</span></span></code>
+                  <a id="map">
+                    <a href="#map">
+                      <code><span>Async.map&#32;<span>arg1&#32;arg2</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1455">
+              <div class="fsdocs-tip" id="1282">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>bind&#32;<span>f&#32;x</span></span></code>
+                  <code><span>Async.map&#32;<span>arg1&#32;arg2</span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
                   <ul>
                     <span>
                       <b>
-                        f
+                        arg0
                       </b>
                       :
-                      <code><span>'a&#32;->&#32;<span>'b&#32;voption</span></span></code>
+                      <code><span>'T&#32;->&#32;'U</span></code>
                     </span>
                     <br/>
                     <span>
                       <b>
-                        x
+                        arg1
                       </b>
                       :
-                      <code><span>'a&#32;voption</span></code>
+                      <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;'T&gt;</span></code>
                     </span>
                     <br/>
                   </ul>
                   <br/>
                   <span>
                     Returns: 
-                    <code><span>'b&#32;voption</span></code>
+                    <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;'U&gt;</span></code>
                   </span>
                   <br/>
-                  Modifiers: 
-                  inline
-                  <br/>
-                  Type parameters: 
-                  &#39;a, &#39;b
                 </div>
               </div>
             </div>
@@ -385,18 +386,18 @@
               <dl class="fsdocs-params">
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    f
+                    arg0
                   </span>
                   :
-                  <code><span>'a&#32;->&#32;<span>'b&#32;voption</span></span></code>
+                  <code><span>'T&#32;->&#32;'U</span></code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    x
+                    arg1
                   </span>
                   :
-                  <code><span>'a&#32;voption</span></code>
+                  <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;'T&gt;</span></code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
               </dl>
@@ -405,80 +406,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><span>'b&#32;voption</span></code>
-                </dt>
-                <dd class="fsdocs-return-docs"></dd>
-              </dl>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1456', 1456)" onmouseover="showTip(event, '1456', 1456)">
-                <p>
-                  <a id="ofOption">
-                    <a href="#ofOption">
-                      <code><span>ofOption&#32;<span>x</span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1456">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>ofOption&#32;<span>x</span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        x
-                      </b>
-                      :
-                      <code><span>'a&#32;option</span></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                  <span>
-                    Returns: 
-                    <code><span>'a&#32;voption</span></code>
-                  </span>
-                  <br/>
-                  Modifiers: 
-                  inline
-                  <br/>
-                  Type parameters: 
-                  &#39;a
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    x
-                  </span>
-                  :
-                  <code><span>'a&#32;option</span></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
-              <dl class="fsdocs-returns">
-                <dt>
-                  <span class="fsdocs-return-name">
-                    Returns: 
-                  </span>
-                  <code><span>'a&#32;voption</span></code>
+                  <code><span><a href="https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync-1">Async</a>&lt;'U&gt;</span></code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>

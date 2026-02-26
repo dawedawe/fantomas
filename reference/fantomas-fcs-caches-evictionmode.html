@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="NamePatPair (fantomas)" />
+    <meta property="og:title" content="EvictionMode (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="NamePatPair (fantomas)">
+    <meta name="twitter:title" content="EvictionMode (fantomas)">
     
-    <title>NamePatPair (fantomas) | fantomas</title>
+    <title>EvictionMode (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,31 +284,25 @@
     <div id="content">
         <div>
   <h2>
-    NamePatPair Type
+    EvictionMode Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core.html">
-        Fantomas.Core
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-caches.html">
+        Fantomas.FCS.Caches
       </a>
     </dt>
     <dt>
-      Assembly: Fantomas.Core.dll
-    </dt>
-    <dt>
-      Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak.html">
-        SyntaxOak
-      </a>
+      Assembly: Fantomas.FCS.dll
     </dt>
     <dt>
       Base Type: 
-      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-nodebase.html">NodeBase</a></code>
+      <code>obj</code>
     </dt>
     <dt>
       All Interfaces: 
-      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-node.html">Node</a></code>
+      <code><a href="https://learn.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
     </dt>
   </dl>
   <div class="fsdocs-xmldoc">
@@ -323,18 +317,15 @@
   <div></div>
   <div></div>
   <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
   <div>
     <h3>
-      Constructors
+      Union cases
     </h3>
     <table class="table outer-list fsdocs-member-list">
       <thead>
         <tr>
           <td class="fsdocs-member-list-header">
-            Constructor
+            Union case
           </td>
           <td class="fsdocs-member-list-header">
             Description
@@ -346,122 +337,120 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3926', 3926)" onmouseover="showTip(event, '3926', 3926)">
+              <code onmouseout="hideTip(event, '8287', 8287)" onmouseover="showTip(event, '8287', 8287)">
                 <p>
-                  <a id="``.ctor``">
-                    <a href="#``.ctor``">
-                      <code><span>NamePatPair<span><span>(<span>ident,&#32;equals,&#32;pat,&#32;range</span>)</span></span></span></code>
+                  <a id="Immediate">
+                    <a href="#Immediate">
+                      <code><span>Immediate</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3926">
+              <div class="fsdocs-tip" id="8287">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>NamePatPair<span><span>(<span>ident,&#32;equals,&#32;pat,&#32;range</span>)</span></span></span></code>
+                  <code><span>Immediate</span></code>
                   <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        ident
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        equals
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        pat
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-pattern.html">Pattern</a></code>
-                    </span>
-                    <br/>
-                    <span>
-                      <b>
-                        range
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                  <span>
-                    Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-namepatpair.html">NamePatPair</a></code>
-                  </span>
                   <br/>
                 </div>
               </div>
             </div>
           </td>
           <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-summary-contents">
+                <p class="fsdocs-summary">
+                   Evict items immediately on the caller's thread when adding a new item that would exceed capacity.
+                </p>
+              </div>
               <div class="icon-button-row">
                 <a href="" class="fsdocs-source-link" title="Source on GitHub">
                   <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
                 </a>
               </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    ident
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    equals
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    pat
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-pattern.html">Pattern</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    range
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
-              <dl class="fsdocs-returns">
-                <dt>
-                  <span class="fsdocs-return-name">
-                    Returns: 
-                  </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-namepatpair.html">NamePatPair</a></code>
-                </dt>
-                <dd class="fsdocs-return-docs"></dd>
-              </dl>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8288', 8288)" onmouseover="showTip(event, '8288', 8288)">
+                <p>
+                  <a id="MailboxProcessor">
+                    <a href="#MailboxProcessor">
+                      <code><span>MailboxProcessor</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8288">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MailboxProcessor</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-summary-contents">
+                <p class="fsdocs-summary">
+                   Evict items in the background using a MailboxProcessor to queue eviction requests. This may lag behind during heavy load but avoids blocking callers.
+                </p>
+              </div>
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '8289', 8289)" onmouseover="showTip(event, '8289', 8289)">
+                <p>
+                  <a id="NoEviction">
+                    <a href="#NoEviction">
+                      <code><span>NoEviction</span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="8289">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>NoEviction</span></code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <div class="fsdocs-summary-contents">
+                <p class="fsdocs-summary">
+                   Do not evict items, cache is effectively a ConcurrentDictionary.
+                </p>
+              </div>
+              <div class="icon-button-row">
+                <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
+                </a>
+              </div>
             </div>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
+  <div></div>
+  <div></div>
+  <div></div>
   <div>
     <h3>
       Instance members
@@ -482,24 +471,24 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3927', 3927)" onmouseover="showTip(event, '3927', 3927)">
+              <code onmouseout="hideTip(event, '8290', 8290)" onmouseover="showTip(event, '8290', 8290)">
                 <p>
-                  <a id="Equals">
-                    <a href="#Equals">
-                      <code><span>this.Equals</span></code>
+                  <a id="IsImmediate">
+                    <a href="#IsImmediate">
+                      <code><span>this.IsImmediate</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3927">
+              <div class="fsdocs-tip" id="8290">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.Equals</span></code>
+                  <code><span>this.IsImmediate</span></code>
                   <br/>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                    <code>bool</code>
                   </span>
                   <br/>
                 </div>
@@ -518,7 +507,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                  <code>bool</code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -528,24 +517,24 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3928', 3928)" onmouseover="showTip(event, '3928', 3928)">
+              <code onmouseout="hideTip(event, '8291', 8291)" onmouseover="showTip(event, '8291', 8291)">
                 <p>
-                  <a id="Ident">
-                    <a href="#Ident">
-                      <code><span>this.Ident</span></code>
+                  <a id="IsMailboxProcessor">
+                    <a href="#IsMailboxProcessor">
+                      <code><span>this.IsMailboxProcessor</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3928">
+              <div class="fsdocs-tip" id="8291">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.Ident</span></code>
+                  <code><span>this.IsMailboxProcessor</span></code>
                   <br/>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                    <code>bool</code>
                   </span>
                   <br/>
                 </div>
@@ -564,7 +553,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-singletextnode.html">SingleTextNode</a></code>
+                  <code>bool</code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>
@@ -574,24 +563,24 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '3929', 3929)" onmouseover="showTip(event, '3929', 3929)">
+              <code onmouseout="hideTip(event, '8292', 8292)" onmouseover="showTip(event, '8292', 8292)">
                 <p>
-                  <a id="Pattern">
-                    <a href="#Pattern">
-                      <code><span>this.Pattern</span></code>
+                  <a id="IsNoEviction">
+                    <a href="#IsNoEviction">
+                      <code><span>this.IsNoEviction</span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="3929">
+              <div class="fsdocs-tip" id="8292">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>this.Pattern</span></code>
+                  <code><span>this.IsNoEviction</span></code>
                   <br/>
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-pattern.html">Pattern</a></code>
+                    <code>bool</code>
                   </span>
                   <br/>
                 </div>
@@ -610,7 +599,7 @@
                   <span class="fsdocs-return-name">
                     Returns: 
                   </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-syntaxoak-pattern.html">Pattern</a></code>
+                  <code>bool</code>
                 </dt>
                 <dd class="fsdocs-return-docs"></dd>
               </dl>

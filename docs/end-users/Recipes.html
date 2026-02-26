@@ -600,11 +600,20 @@ To avoid extreme indentation in our happy path, you can use <a href="https://fsp
             // Happy path at same indent
 
             return
-                [ { SourceDiagnostic = None
-                    Title = title
-                    File = codeActionParams.TextDocument
-                    Edits = [| { Range = fcsRangeToLsp expr.Range NewText = newText } |]
-                    Kind = FixKind.Fix } ]
+                [
+                    {
+                        SourceDiagnostic = None
+                        Title = title
+                        File = codeActionParams.TextDocument
+                        Edits =
+                            [|
+                                {
+                                    Range = fcsRangeToLsp expr.Range NewText = newText
+                                }
+                            |]
+                        Kind = FixKind.Fix
+                    }
+                ]
         })</code></pre></td></tr></table>
 <p>⚠️ The downside of this setting is that it only respects this style of formatting if it was already present in the original source.
 The problem with this approach is that the author of the original code decides whether this style is used.
@@ -623,7 +632,7 @@ from Fantomas</div>
 <div class="fsdocs-tip" id="fs9">val async: AsyncBuilder</div>
 <div class="fsdocs-tip" id="fs10">val config: FormatConfig</div>
 <div class="fsdocs-tip" id="fs11">val editorConfigProperties: Collections.Generic.IReadOnlyDictionary&lt;string,string&gt;</div>
-<div class="fsdocs-tip" id="fs12">String.Split([&lt;ParamArray&gt;] separator: char array) : string array<br />String.Split(separator: string array, options: StringSplitOptions) : string array<br />String.Split(separator: string, ?options: StringSplitOptions) : string array<br />String.Split(separator: char array, options: StringSplitOptions) : string array<br />String.Split(separator: char array, count: int) : string array<br />String.Split(separator: char, ?options: StringSplitOptions) : string array<br />String.Split(separator: string array, count: int, options: StringSplitOptions) : string array<br />String.Split(separator: string, count: int, ?options: StringSplitOptions) : string array<br />String.Split(separator: char array, count: int, options: StringSplitOptions) : string array<br />String.Split(separator: char, count: int, ?options: StringSplitOptions) : string array</div>
+<div class="fsdocs-tip" id="fs12">String.Split(separator: ReadOnlySpan&lt;char&gt;) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split([&lt;ParamArray&gt;] separator: char array) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string array, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, count: int) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string array, count: int, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: string, count: int, ?options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em><br />String.Split(separator: char array, count: int, options: StringSplitOptions) : string array<br />&#160;&#160;&#160;<em>(+0 other overloads)</em></div>
 <div class="fsdocs-tip" id="fs13">[&lt;Struct&gt;]
 type StringSplitOptions =
   | None = 0
@@ -671,16 +680,16 @@ type StringSplitOptions =
 <div class="fsdocs-tip" id="fs26">property FormatConfig.Default: FormatConfig with get</div>
 <div class="fsdocs-tip" id="fs27">val result: FormatResult</div>
 <div class="fsdocs-tip" id="fs28">type CodeFormatter =
-  static member FormatASTAsync: ast: ParsedInput -&gt; Async&lt;string&gt; + 2 overloads
+  static member FormatASTAsync: ast: ParsedInput -&gt; Async&lt;string&gt; + 3 overloads
   static member FormatDocumentAsync: isSignature: bool * source: string -&gt; Async&lt;FormatResult&gt; + 2 overloads
   static member FormatOakAsync: oak: Oak -&gt; Async&lt;string&gt; + 1 overload
   static member FormatSelectionAsync: isSignature: bool * source: string * selection: range -&gt; Async&lt;string * range&gt; + 1 overload
   static member GetVersion: unit -&gt; string
+  static member GetWriterEventsAsync: isSignature: bool * source: string -&gt; Async&lt;WriterEvent array&gt; + 1 overload
   static member IsValidFSharpCodeAsync: isSignature: bool * source: string -&gt; Async&lt;bool&gt;
   static member MakePosition: line: int * column: int -&gt; pos
   static member MakeRange: fileName: string * startLine: int * startCol: int * endLine: int * endCol: int -&gt; range
   static member ParseAsync: isSignature: bool * source: string -&gt; Async&lt;(ParsedInput * string list) array&gt;
-  static member ParseOakAsync: isSignature: bool * source: string -&gt; Async&lt;(Oak * string list) array&gt;
   ...</div>
 <div class="fsdocs-tip" id="fs29">static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string -&gt; Async&lt;FormatResult&gt;<br />static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string * config: FormatConfig -&gt; Async&lt;FormatResult&gt;<br />static member CodeFormatter.FormatDocumentAsync: isSignature: bool * source: string * config: FormatConfig * cursor: Fantomas.FCS.Text.pos -&gt; Async&lt;FormatResult&gt;</div>
 <div class="fsdocs-tip" id="fs30">val printf: format: Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T</div>

@@ -7,15 +7,15 @@
     <meta content="Florian Verdonck, Jindřich Ivánek, David Schaefer" name="author">
     <!-- Opengraph properties (https://ogp.me/) -->
     <meta property="og:site_name" content="fantomas">
-    <meta property="og:title" content="LexbufLocalXmlDocStore (fantomas)" />
+    <meta property="og:title" content="CommentStore (fantomas)" />
     <meta property="og:url" content="https://fsprojects.github.io/fantomas/{{fsdocs-source-basename}}.html">
     <meta property="og:type" content="website" />
     <!-- Twitter cards (https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/summary-card-with-large-image) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://fsprojects.github.io/fantomas/">
-    <meta name="twitter:title" content="LexbufLocalXmlDocStore (fantomas)">
+    <meta name="twitter:title" content="CommentStore (fantomas)">
     
-    <title>LexbufLocalXmlDocStore (fantomas) | fantomas</title>
+    <title>CommentStore (fantomas) | fantomas</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
@@ -284,7 +284,7 @@
     <div id="content">
         <div>
   <h2>
-    LexbufLocalXmlDocStore Module
+    CommentStore Module
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
@@ -298,8 +298,8 @@
     </dt>
     <dt>
       Parent Module: 
-      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-parsehelpers.html">
-        ParseHelpers
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-lexerstore.html">
+        LexerStore
       </a>
     </dt>
   </dl>
@@ -332,19 +332,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '367', 367)" onmouseover="showTip(event, '367', 367)">
+              <code onmouseout="hideTip(event, '290', 290)" onmouseover="showTip(event, '290', 290)">
                 <p>
-                  <a id="AddGrabPoint">
-                    <a href="#AddGrabPoint">
-                      <code><span>AddGrabPoint&#32;<span>lexbuf</span></span></code>
+                  <a id="GetComments">
+                    <a href="#GetComments">
+                      <code><span>CommentStore.GetComments&#32;<span>lexbuf</span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="367">
+              <div class="fsdocs-tip" id="290">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>AddGrabPoint&#32;<span>lexbuf</span></span></code>
+                  <code><span>CommentStore.GetComments&#32;<span>lexbuf</span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -358,6 +358,11 @@
                     </span>
                     <br/>
                   </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-commenttrivia.html">CommentTrivia</a>&#32;list</span></code>
+                  </span>
                   <br/>
                 </div>
               </div>
@@ -380,59 +385,14 @@
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
               </dl>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '368', 368)" onmouseover="showTip(event, '368', 368)">
-                <p>
-                  <a id="AddGrabPointDelayed">
-                    <a href="#AddGrabPointDelayed">
-                      <code><span>AddGrabPointDelayed&#32;<span>lexbuf</span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="368">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>AddGrabPointDelayed&#32;<span>lexbuf</span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
+              <dl class="fsdocs-returns">
+                <dt>
+                  <span class="fsdocs-return-name">
+                    Returns: 
                   </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
+                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-syntaxtrivia-commenttrivia.html">CommentTrivia</a>&#32;list</span></code>
                 </dt>
-                <dd class="fsdocs-param-docs"></dd>
+                <dd class="fsdocs-return-docs"></dd>
               </dl>
             </div>
           </td>
@@ -440,73 +400,19 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '369', 369)" onmouseover="showTip(event, '369', 369)">
+              <code onmouseout="hideTip(event, '291', 291)" onmouseover="showTip(event, '291', 291)">
                 <p>
-                  <a id="ClearXmlDoc">
-                    <a href="#ClearXmlDoc">
-                      <code><span>ClearXmlDoc&#32;<span>lexbuf</span></span></code>
+                  <a id="SaveBlockComment">
+                    <a href="#SaveBlockComment">
+                      <code><span>CommentStore.SaveBlockComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="369">
+              <div class="fsdocs-tip" id="291">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>ClearXmlDoc&#32;<span>lexbuf</span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '370', 370)" onmouseover="showTip(event, '370', 370)">
-                <p>
-                  <a id="GrabXmlDocBeforeMarker">
-                    <a href="#GrabXmlDocBeforeMarker">
-                      <code><span>GrabXmlDocBeforeMarker&#32;<span><span>(<span>lexbuf,&#32;markerRange</span>)</span></span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="370">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>GrabXmlDocBeforeMarker&#32;<span><span>(<span>lexbuf,&#32;markerRange</span>)</span></span></span></code>
+                  <code><span>CommentStore.SaveBlockComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -521,7 +427,15 @@
                     <br/>
                     <span>
                       <b>
-                        markerRange
+                        startRange
+                      </b>
+                      :
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        endRange
                       </b>
                       :
                       <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
@@ -529,11 +443,6 @@
                     <br/>
                   </ul>
                   <br/>
-                  <span>
-                    Returns: 
-                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-xml-prexmldoc.html">PreXmlDoc</a></code>
-                  </span>
-                  <br/>
                 </div>
               </div>
             </div>
@@ -556,109 +465,40 @@
                 <dd class="fsdocs-param-docs"></dd>
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    markerRange
+                    startRange
+                  </span>
+                  :
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
+                </dt>
+                <dd class="fsdocs-param-docs"></dd>
+                <dt class="fsdocs-param">
+                  <span class="fsdocs-param-name">
+                    endRange
                   </span>
                   :
                   <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
               </dl>
-              <dl class="fsdocs-returns">
-                <dt>
-                  <span class="fsdocs-return-name">
-                    Returns: 
-                  </span>
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-xml-prexmldoc.html">PreXmlDoc</a></code>
-                </dt>
-                <dd class="fsdocs-return-docs"></dd>
-              </dl>
             </div>
           </td>
         </tr>
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '371', 371)" onmouseover="showTip(event, '371', 371)">
+              <code onmouseout="hideTip(event, '292', 292)" onmouseover="showTip(event, '292', 292)">
                 <p>
-                  <a id="ReportInvalidXmlDocPositions">
-                    <a href="#ReportInvalidXmlDocPositions">
-                      <code><span>ReportInvalidXmlDocPositions&#32;<span>lexbuf</span></span></code>
+                  <a id="SaveSingleLineComment">
+                    <a href="#SaveSingleLineComment">
+                      <code><span>CommentStore.SaveSingleLineComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
                     </a>
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="371">
+              <div class="fsdocs-tip" id="292">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code><span>ReportInvalidXmlDocPositions&#32;<span>lexbuf</span></span></code>
-                  <br/>
-                  <br/>
-                  Parameters: 
-                  <ul>
-                    <span>
-                      <b>
-                        lexbuf
-                      </b>
-                      :
-                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                    </span>
-                    <br/>
-                  </ul>
-                  <br/>
-                  <span>
-                    Returns: 
-                    <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a>&#32;list</span></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-member-xmldoc-column">
-              <div class="icon-button-row">
-                <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                  <iconify-icon icon="ri:github-fill" height="24" width="24"></iconify-icon>
-                </a>
-              </div>
-              <dl class="fsdocs-params">
-                <dt class="fsdocs-param">
-                  <span class="fsdocs-param-name">
-                    lexbuf
-                  </span>
-                  :
-                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-unicodelexing-lexbuf.html">Lexbuf</a></code>
-                </dt>
-                <dd class="fsdocs-param-docs"></dd>
-              </dl>
-              <dl class="fsdocs-returns">
-                <dt>
-                  <span class="fsdocs-return-name">
-                    Returns: 
-                  </span>
-                  <code><span><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a>&#32;list</span></code>
-                </dt>
-                <dd class="fsdocs-return-docs"></dd>
-              </dl>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '372', 372)" onmouseover="showTip(event, '372', 372)">
-                <p>
-                  <a id="SaveXmlDocLine">
-                    <a href="#SaveXmlDocLine">
-                      <code><span>SaveXmlDocLine&#32;<span><span>(<span>lexbuf,&#32;lineText,&#32;range</span>)</span></span></span></code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="372">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code><span>SaveXmlDocLine&#32;<span><span>(<span>lexbuf,&#32;lineText,&#32;range</span>)</span></span></span></code>
+                  <code><span>CommentStore.SaveSingleLineComment&#32;<span><span>(<span>lexbuf,&#32;startRange,&#32;endRange</span>)</span></span></span></code>
                   <br/>
                   <br/>
                   Parameters: 
@@ -673,15 +513,15 @@
                     <br/>
                     <span>
                       <b>
-                        lineText
+                        startRange
                       </b>
                       :
-                      <code>string</code>
+                      <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
                     </span>
                     <br/>
                     <span>
                       <b>
-                        range
+                        endRange
                       </b>
                       :
                       <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
@@ -711,15 +551,15 @@
                 <dd class="fsdocs-param-docs"></dd>
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    lineText
+                    startRange
                   </span>
                   :
-                  <code>string</code>
+                  <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
                 </dt>
                 <dd class="fsdocs-param-docs"></dd>
                 <dt class="fsdocs-param">
                   <span class="fsdocs-param-name">
-                    range
+                    endRange
                   </span>
                   :
                   <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-fcs-text-range-0.html">range</a></code>
